@@ -1,0 +1,24 @@
+
+
+body{ /* sets body background to spacegray*/
+    background-color: #202020;
+}
+
+*{ /*changes color of any text to white*/
+    color:whitesmoke;
+}
+h1{
+    font-size:24px;
+}
+option{
+    color: #202020;
+}
+select{
+    color:#202020;
+}
+button{
+    color: #202020;
+}
+input{
+    color:#202020;
+}

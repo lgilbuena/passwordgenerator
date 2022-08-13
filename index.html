@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+            <title>Password Generator</title>
+    </head>
+    <body>
+        <script src = "main.js"></script>
+        <h1 class="text">Password Generator</h1>
+        <label for="Character Count">How many characters in your new password?</label>
+        <select name="Num" id="num">
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+        </select>
+        <p class="checkbox"><input type="checkbox" id="lletters" value="Letter">
+        <label for="letters">Include lowercase letters? (a,b,c,d,...)</label>
+        </p>
+        <p class="checkbox"><input type="checkbox" id="uletters" value="Letter">
+        <label for="letters">Include uppercase letters? (A,B,C,D,...)</label>
+        </p>
+        <p class = "checkbox"> <input type="checkbox" id="numbers" value="Number">
+        <label for="numbers">Include numbers? (1,2,3,4,...)</label>
+        </p>
+        <p class = "checkbox"><input type="checkbox" id="specials" value="Special">
+        <label for="specials">Include special characters? (&,%,$,#,...)</label>
+        </p>
+        <p class = "textbox">
+            <label for="generated">Password Generated:</label>
+            <input type="text" 
+                id="genmerated" 
+                name="generated" 
+                value= ""
+                readonly>
+            <button onclick = makePassword()>Generate Password</button>
+            <button onclick = onClickCopy()>Copy to Clipboard</button>         
+            
+        </p>
+    </body>
+</html>
